@@ -4,16 +4,54 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>portfolio</title> 
+      <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+      <script src="~/Scripts/bootstrap.min.js"></script> 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #newStyle1 {
+            margin-top: 800px;
+        }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
+    <header class="mb-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white p-3 ">
+  <div class="container-fluid text-white">
+    <a class="navbar-brand text-white" href="#">M/W</a>
+   
+    <div class="collapse navbar-collapse text-white">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+        <li class="nav-item text-white">
+          <a class="nav-link active text-white" aria-current="page" href="home.aspx">Home</a>
+        </li>
+        <li class="nav-item text-white">
+          <a class="nav-link text-white" href="about.aspx">About Mercy</a>
+        </li>
+        <li class="nav-item text-white">
+          <a class="nav-link text-white" href="contact.aspx">Contact Mercy</a>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+         </header>
+    
+        <div class="mt-5">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-    </form>
+
+  <footer class="bg-light text-center text-lg-start mt-5 fixed-bottom">
+
+  <div class="text-center p-4 mt-5" id="newStyle1" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://www.linkedin.com/in/mercy-wamanga-47465b143/">Mercy Wamanga</a>
+  </div>
+ 
+</footer>
+   
 </body>
 </html>
